@@ -522,9 +522,9 @@
             dropsContainer.innerHTML += dropCard;
           });
 
-          // Button feedback: "Synced!"
+          // Button feedback: "Synced! or Updated!"
           if (refreshBtn) {
-            refreshBtn.innerHTML = '<i class="fa-solid fa-check text-emerald-500"></i> All Drops Synced!';
+            refreshBtn.innerHTML = '<i class="fa-solid fa-check text-emerald-500"></i> All Drops Updated!';
             setTimeout(() => {
               refreshBtn.innerHTML = '<i class="fa-solid fa-rotate-right" id="refreshDropsIcon"></i> Check New Drops';
               refreshBtn.disabled = false;
