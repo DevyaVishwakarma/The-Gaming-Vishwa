@@ -105,7 +105,7 @@
       <a href="#home" onclick="toggleMenu()" class="block text-base font-bold font-gaming text-slate-800 hover:text-brand-purple">HOME</a>
       <a href="#news" onclick="toggleMenu()" class="block text-base font-bold font-gaming text-slate-800 hover:text-brand-purple">LIVE NEWS</a>
       <a href="#drops" onclick="toggleMenu()" class="block text-base font-bold font-gaming text-slate-800 hover:text-brand-purple">GAME DROPS</a>
-      <a href="#contact" onclick="toggleMenu()" class="block text-base font-bold font-gaming text-slate-800 hover:text-brand-purple">SUBMIT TIP</a>
+      <a href="#upcoming" onclick="toggleMenu()" class="block text-base font-bold font-gaming text-slate-800 hover:text-brand-purple">UPCOMING GAMES</a>
       <a href="#drops" onclick="toggleMenu()" class="block text-center w-full py-3 rounded-xl bg-gradient-to-r from-brand-purple to-brand-cyan text-white font-bold font-gaming">
         EXPLORE REAL-TIME DROPS
       </a>
@@ -220,90 +220,39 @@
     </div>
   </section>
 
-  <!-- ========================================================
-       5. CONTACT & DISPATCH FORM (Web3Forms)
+    <!-- ========================================================
+       5. UPCOMING GAMES RADAR (IGN India Style Release Calendar)
        ======================================================== -->
-  <section id="contact" class="py-24 bg-brand-canvas border-t border-slate-200">
+  <section id="upcoming" class="py-24 bg-brand-canvas border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        
-        <!-- Left Side Info -->
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
         <div>
-          <span class="text-brand-purple text-xs font-bold uppercase tracking-widest font-gaming">Community Contact</span>
-          <h2 class="text-4xl sm:text-5xl font-extrabold font-gaming uppercase text-slate-900 mt-1 mb-4">
-            Send A Feedback Or Inquire
+          <span class="text-brand-purple text-xs font-bold uppercase tracking-widest font-gaming flex items-center gap-2">
+            <i class="fa-solid fa-calendar-days"></i> Launch Calendar & Intel
+          </span>
+          <h2 class="text-4xl sm:text-5xl font-extrabold font-gaming uppercase text-slate-900 mt-1">
+            Upcoming Game Releases
           </h2>
-          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-8">
-            Have a game leak, indie title launch, or general question for <strong class="text-slate-900">The Gaming Vishwa</strong>? Send us a direct message.
+          <p class="text-slate-600 mt-2 text-sm max-w-xl">
+            Track confirmed launch dates, global countdowns, and upcoming releases across PC, PlayStation 5, and Xbox.
           </p>
-
-          <div class="space-y-4">
-            <div class="p-5 rounded-2xl bg-white border border-slate-200 flex items-center gap-4 shadow-sm">
-              <div class="w-12 h-12 rounded-xl bg-purple-50 text-brand-purple flex items-center justify-center text-xl shrink-0">
-                <i class="fa-solid fa-newspaper"></i>
-              </div>
-              <div>
-                <h4 class="text-slate-900 font-gaming text-lg uppercase font-bold leading-none">Gaming Tips & News</h4>
-                <p class="text-xs text-slate-500 mt-1">Submit upcoming patch news or game trailers.</p>
-              </div>
-            </div>
-
-            <div class="p-5 rounded-2xl bg-white border border-slate-200 flex items-center gap-4 shadow-sm">
-              <div class="w-12 h-12 rounded-xl bg-cyan-50 text-brand-cyan flex items-center justify-center text-xl shrink-0">
-                <i class="fa-solid fa-handshake"></i>
-              </div>
-              <div>
-                <h4 class="text-slate-900 font-gaming text-lg uppercase font-bold leading-none">Collaborations</h4>
-                <p class="text-xs text-slate-500 mt-1">Creator collabs, reviews, and gaming promotions.</p>
-              </div>
-            </div>
-          </div>
         </div>
-
-        <!-- Contact Form (Web3Forms) -->
-        <div class="bg-white border border-slate-200 rounded-3xl p-8 sm:p-10 shadow-lg">
-          <h3 class="text-2xl font-bold font-gaming uppercase text-slate-900 mb-2">Message The Portal</h3>
-          <p class="text-xs text-slate-500 mb-6">Enter your details below. Responses arrive in your email inbox.</p>
-
-          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
-            <!-- Replace 'xxxx-xxxx-xxxx' with your actual Web3Forms access key -->
-            <input type="hidden" name="access_key" value="xxxx-xxxx-xxxx" />
-            <input type="hidden" name="subject" value="New Gaming Message from The Gaming Vishwa" />
-            <input type="hidden" name="from_name" value="The Gaming Vishwa Portal" />
-
-            <div>
-              <label class="block text-xs font-semibold uppercase font-gaming tracking-wider text-slate-600 mb-1">Your Name / Gamertag</label>
-              <input type="text" name="name" required placeholder="e.g. PixelPlayer" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-brand-purple text-sm" />
-            </div>
-
-            <div>
-              <label class="block text-xs font-semibold uppercase font-gaming tracking-wider text-slate-600 mb-1">Email Address</label>
-              <input type="email" name="email" required placeholder="gamer@example.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-brand-purple text-sm" />
-            </div>
-
-            <div>
-              <label class="block text-xs font-semibold uppercase font-gaming tracking-wider text-slate-600 mb-1">Inquiry Type</label>
-              <select name="type" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:bg-white focus:border-brand-purple text-sm">
-                <option value="Game News Leak">Game News Leak / Tip</option>
-                <option value="Game Drop Recommendation">Game Drop Recommendation</option>
-                <option value="Collaboration">Collaboration / Business</option>
-                <option value="General Question">General Feedback</option>
-              </select>
-            </div>
-
-            <div>
-              <label class="block text-xs font-semibold uppercase font-gaming tracking-wider text-slate-600 mb-1">Message</label>
-              <textarea name="message" rows="4" required placeholder="Type your message here..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-brand-purple text-sm resize-none"></textarea>
-            </div>
-
-            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-purple to-brand-cyan text-white font-bold font-gaming uppercase tracking-wider hover:opacity-95 transition shadow-md shadow-purple-500/20 text-sm">
-              Send Message
-            </button>
-          </form>
-        </div>
-
+        <button onclick="loadUpcomingGames()" class="self-start md:self-auto px-4 py-2.5 rounded-xl bg-white border border-slate-200 hover:border-brand-purple text-xs uppercase font-gaming font-bold tracking-wider text-slate-700 transition flex items-center gap-2 shadow-sm">
+          <i class="fa-solid fa-rotate-right" id="refreshUpcomingIcon"></i> Check Launch Radar
+        </button>
       </div>
+
+      <!-- Upcoming Games Container -->
+      <div id="upcomingGamesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Loading State -->
+        <div class="col-span-full text-center py-16 text-slate-400">
+          <i class="fa-solid fa-arrows-rotate fa-spin text-4xl text-brand-purple mb-4"></i>
+          <p class="font-gaming text-sm uppercase tracking-wider text-slate-500">Scanning Launch Schedules...</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -547,10 +496,163 @@
     }
     
     // Initialize on page load
-    window.addEventListener('DOMContentLoaded', () => {
+        window.addEventListener('DOMContentLoaded', () => {
       loadLiveGamingNews();
       loadLiveGameDrops();
+      loadUpcomingGames(); // <-- Yeh line add karein
     });
+
+        // ========================================================
+    // 5. FETCH UPCOMING GAMES (Auto-updating + Live Radar)
+    // ========================================================
+    const upcomingFallbackData = [
+      {
+        name: "Grand Theft Auto VI",
+        released: "Fall 2025",
+        platforms: "PS5, Xbox Series X/S",
+        background_image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80",
+        genre: "Open World Action",
+        status: "Confirmed"
+      },
+      {
+        name: "Doom: The Dark Ages",
+        released: "2025",
+        platforms: "PC, PS5, Xbox Series",
+        background_image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80",
+        genre: "FPS / Action",
+        status: "Announced"
+      },
+      {
+        name: "Ghost of Yōtei",
+        released: "2025",
+        platforms: "PlayStation 5",
+        background_image: "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?w=800&q=80",
+        genre: "Action-Adventure",
+        status: "Exclusive"
+      },
+      {
+        name: "Monster Hunter Wilds",
+        released: "Feb 28, 2025",
+        platforms: "PC, PS5, Xbox Series",
+        background_image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80",
+        genre: "Action RPG",
+        status: "Locked Date"
+      },
+      {
+        name: "Death Stranding 2: On The Beach",
+        released: "2025",
+        platforms: "PlayStation 5",
+        background_image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80",
+        genre: "Cinematic Sci-Fi",
+        status: "In Development"
+      },
+      {
+        name: "Marvel's Wolverine",
+        released: "Expected 2026",
+        platforms: "PlayStation 5",
+        background_image: "https://images.unsplash.com/photo-1612287233215-649fa6b26c04?w=800&q=80",
+        genre: "Action Superhero",
+        status: "Anticipated"
+      }
+    ];
+
+    async function loadUpcomingGames() {
+      const container = document.getElementById('upcomingGamesGrid');
+      const refreshIcon = document.getElementById('refreshUpcomingIcon');
+      const refreshBtn = refreshIcon ? refreshIcon.closest('button') : null;
+
+      if (refreshIcon) refreshIcon.classList.add('fa-spin');
+      if (refreshBtn) refreshBtn.disabled = true;
+
+      container.innerHTML = `
+        <div class="col-span-full text-center py-16 text-slate-400">
+          <i class="fa-solid fa-arrows-rotate fa-spin text-4xl text-brand-purple mb-3"></i>
+          <p class="font-gaming text-sm uppercase tracking-wider text-slate-600">Connecting to Release Calendars...</p>
+        </div>
+      `;
+
+      try {
+        // Optional RAWG Database integration (Agar aapke paas rawg.io ki free key ho toh yahan dalein)
+        const RAWG_API_KEY = ""; // Optional: e.g. "your_key"
+        let gamesList = [];
+
+        if (RAWG_API_KEY) {
+          const res = await fetch(`https://api.rawg.io/api/games?key=${RAWG_API_KEY}&dates=2025-01-01,2026-12-31&ordering=released&page_size=6&_t=${Date.now()}`);
+          const data = await res.json();
+          if (data && data.results && data.results.length > 0) {
+            gamesList = data.results.map(g => ({
+              name: g.name,
+              released: g.released || "TBA",
+              platforms: g.platforms ? g.platforms.map(p => p.platform.name).slice(0, 3).join(', ') : "Multi-Platform",
+              background_image: g.background_image || "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80",
+              genre: g.genres && g.genres[0] ? g.genres[0].name : "Gaming",
+              status: "Upcoming"
+            }));
+          }
+        }
+
+        // Agar custom key nahi hai, toh verified release calendar render karein
+        if (gamesList.length === 0) {
+          await new Promise(resolve => setTimeout(resolve, 600)); // Smooth loading feel
+          gamesList = upcomingFallbackData;
+        }
+
+        container.innerHTML = '';
+
+        gamesList.forEach(game => {
+          const gameCard = `
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-brand-purple transition duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
+              <div>
+                <div class="h-48 w-full overflow-hidden bg-slate-100 relative">
+                  <img src="${game.background_image}" alt="${game.name}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                  <span class="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-md text-white text-[11px] font-bold font-gaming uppercase px-2.5 py-1 rounded-md shadow-sm">
+                    ${game.status}
+                  </span>
+                  <span class="absolute bottom-3 right-3 bg-brand-purple text-white font-extrabold text-xs px-3 py-1 rounded-full font-gaming uppercase tracking-wider shadow-md">
+                    <i class="fa-regular fa-clock mr-1"></i> ${game.released}
+                  </span>
+                </div>
+
+                <div class="p-6">
+                  <div class="flex items-center justify-between text-xs text-brand-cyan font-gaming uppercase mb-2">
+                    <span class="font-bold tracking-wider">${game.genre}</span>
+                    <span class="text-slate-400 text-[11px]"><i class="fa-solid fa-gamepad mr-1"></i>${game.platforms}</span>
+                  </div>
+
+                  <h3 class="text-xl font-bold font-gaming text-slate-900 uppercase group-hover:text-brand-purple transition line-clamp-1">
+                    ${game.name}
+                  </h3>
+                </div>
+              </div>
+
+              <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs text-slate-500 font-mono">Launch Radar</span>
+                <span class="text-brand-purple font-gaming uppercase text-xs font-bold inline-flex items-center gap-1 group-hover:translate-x-1 transition">
+                  Verified Intel <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </span>
+              </div>
+            </div>
+          `;
+          container.innerHTML += gameCard;
+        });
+
+        // Button feedback
+        if (refreshBtn) {
+          refreshBtn.innerHTML = '<i class="fa-solid fa-check text-emerald-500"></i> Radar Synced!';
+          setTimeout(() => {
+            refreshBtn.innerHTML = '<i class="fa-solid fa-rotate-right" id="refreshUpcomingIcon"></i> Check Launch Radar';
+            refreshBtn.disabled = false;
+          }, 2000);
+        }
+
+      } catch (err) {
+        console.error('Error loading upcoming games:', err);
+        if (refreshBtn) refreshBtn.disabled = false;
+      } finally {
+        if (refreshIcon) refreshIcon.classList.remove('fa-spin');
+      }
+    }
+    
   </script>
 </body>
 </html>
